@@ -1,0 +1,125 @@
+body {
+    color: #333;
+    font-family: arial;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a {
+    color: #888;
+    text-decoration: none;
+}
+.main-content {
+    flex-grow: 1; 
+}
+footer {
+    color: #888;
+    border-top: 1px solid #eee;
+    margin: 16px 0;
+    padding: 8px 0;
+}
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+header a {
+    margin-right: 16px;
+}
+.date h2 {
+    margin: 0
+}
+.date-nav {
+    display: flex;
+}
+.date-nav .date {
+    flex-grow: 3;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+}
+.day-nav {
+    margin:8px;
+}
+.day-period {
+    margin: 32px 0;
+}
+.day-period h3,
+.sub {
+    text-align:center;
+}
+.evening.day-period {
+    border-top: 1px solid #888;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.confidant-nav ul li {
+    display: inline;
+}
+.confidant-nav a,
+.confidants-list a {
+    color: rgb(14, 14, 65);
+}
+/*** Collasping divs ***/
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    border-bottom: 1px solid white;
+  }
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  .active:after {
+    content: "\2212";
+  }
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .answer {
+    background-color: #ddd;
+    display: inline-block; /* you could do this as a full-width block instead */
+    padding: 8px 12px;
+    position: relative; /* needed for placeholder positioning */
+  }
+  
+  .answer:not(:active) {
+    background-color: #eee; /* these two colors must be equivalent A */
+    color: #eee; /* these two colors must be equivalent B */
+    min-width: 96px; /* 72px if box-sizing is border-box; ensures the placeholder is fully visible if the text is smaller than the placeholder text */
+    user-select: none; /* if you want it to be copyable, may highlight spoiler text when they click */
+  }
+  
+  .answer:not(:active)::before {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    content: 'Click\a0to\a0reveal'; /* non-breaking spaces probably necessary */
+    color: #999;
+  }

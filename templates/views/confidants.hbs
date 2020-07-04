@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Persona 4 Golden Guide</title>
+        <link rel="icon" href="/img/icon.png">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <ul class="confidants-list">
+                {{#each confidants}}
+                <li><a href="/confidants/{{@key}}">{{this}}</a></li>
+                {{/each}}
+            </ul>
+            {{>footer}}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Persona 4 Golden Guide</title>
+        <link rel="icon" href="/img/icon.png">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content confidant-details">
+            {{>header}}
+
+            <div class="confidant-nav">
+                <ul>
+                {{#each confidants}}
+                <li><a href="/confidants/{{@key}}">{{this}}</a> | </li>
+                {{/each}}
+            </ul>
+
+            </div>
+
+            <h2>{{arcana}} - {{name}}</h2>
+            <div class="details">
+               <p>{{{notes}}}</p>
+            </div>
+            <div class="ranks">
+                <button class="collapsible">Rank 1</button>
+                <div class="content">
+                    <p>{{rank}}</p>
+                </div>
+            </div>
+
+            {{>footer}}
+        </div>
+
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
+        </script>
+    </body>
+</html>

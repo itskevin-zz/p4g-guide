@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Persona 4 Golden Guide</title>
+        <link rel="icon" href="/img/icon.png">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <div class="date-nav">
+                {{#if prevDate}}
+                <div class="pre-day day-nav"><a href="/day/{{prevDate}}">Previous Day</a></div>
+                {{/if}}
+                <div class="date"><h2>{{weekDay}}, {{date}}</h2></div>
+                {{#if nextDate}}
+                <div class="next-day day-nav"><a href="/day/{{nextDate}}">Next Day</a></div>
+                {{/if}}
+            </div>
+
+            <hr>
+
+            <div class="daytime day-period">
+                <h3 class="day">Daytime | {{weather}}</h3>
+                <p class="sub"><strong>{{dayAvail}}</strong></p>
+
+                {{#if dayNotes}}
+                <div class="day-notes">
+                    <h4>Notes</h4>
+                    <p>{{{dayNotes}}}</p>
+                </div>
+                {{/if}}
+
+                {{#if socialLinks}}
+                <div class="day-slinks">
+                    <h4>Social Links Available</h4>
+                    <ul>
+                        {{#each socialLinks}}
+                        <li>
+                            {{this}}
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                {{/if}}
+            
+            </div>
+
+            <div class="nighttime day-period">
+                <h3 class="night">Evening | {{weather}}</h3>
+                <p class="sub"><strong>{{nightAvail}}</strong></p>
+
+                {{#if nightNotes}}
+                <div class="day-notes">
+                    <h4>Notes</h4>
+                    <p>{{{nightNotes}}}</p>
+                </div>
+                {{/if}}
+
+
+                {{#if nightLinks}}
+                <div class="night-slinks">
+                    <h4>Social Links Available</h4>
+                    <ul>
+                        {{#each nightLinks}}
+                        <li>
+                            {{this}}
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                {{/if}}
+            
+            </div>
+            
+            <hr>
+
+            <div>
+                {{#if spoilers}}
+                <div class="day-spoilers">
+                    <h3 class="sub">Spoilers</h3>
+                    <ul>
+                        {{#spoilers}}
+                        <li>{{question}} - <span class="answer">{{answer}}</span></li>
+                        {{/spoilers}}
+                    </ul>
+                </div>
+                {{/if}}
+            </div>
+
+        {{>footer}}
+        </div>
+    </body>
+</html>
