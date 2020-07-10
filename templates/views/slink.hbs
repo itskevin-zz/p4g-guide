@@ -24,10 +24,26 @@
                <p>{{{notes}}}</p>
             </div>
             <div class="ranks">
-                <button class="collapsible">Rank 1</button>
+                {{#each ranks}}
+                <button class="collapsible">{{this.rank}}</button>
                 <div class="content">
-                    <p>{{rank}}</p>
+                    <p>{{this.notes}}</p>
+                    {{#each this.dialog}}
+                    <p>{{this.question}}</p>
+                    <ul>
+                    {{#each this.answers}}
+                        <li>
+                            {{this.[0]}}
+                            <ul>
+                                <li>pts w/o persona: {{this.[1]}}</li>
+                                <li>pts w/ persona: {{this.[2]}}</li>
+                            </ul>
+                        </li>
+                    {{/each}}
+                    </ul>
+                    {{/each}}
                 </div>
+                {{/each}}
             </div>
 
             {{>footer}}

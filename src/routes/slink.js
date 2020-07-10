@@ -19,7 +19,12 @@ route.get('/slink/:arcana', (req, res) => {
         notes: slinksArray.slinks[arcana].notes,
         ranks: slinksArray.slinks[arcana].rank
     })
-    console.log(slinksArray.slinks[arcana].rank[0])
+})
+
+route.get('/slink', (req, res) => {
+    res.render('slinks', {
+        name: slinksArray.names
+    })
 })
 
 module.exports = route

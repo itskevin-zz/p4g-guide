@@ -24,22 +24,22 @@
 
             <div class="daytime day-period">
                 <h3 class="day">Daytime | {{weather}}</h3>
-                <p class="sub"><strong>{{dayAvail}}</strong></p>
+                <p class="sub"><strong>Event: {{dayAvail}}</strong></p>
 
                 {{#if dayNotes}}
-                <div class="day-notes">
+                <div class="notes">
                     <h4>Notes</h4>
                     <p>{{{dayNotes}}}</p>
                 </div>
                 {{/if}}
 
                 {{#if socialLinks}}
-                <div class="day-slinks">
+                <div class="slinks">
                     <h4>Social Links Available</h4>
                     <ul>
                         {{#each socialLinks}}
                         <li>
-                            {{this}}
+                            <a href="/slink/{{this}}"><img src="/img/characters/{{this}}.png"></a> 
                         </li>
                         {{/each}}
                     </ul>
@@ -50,10 +50,10 @@
 
             <div class="nighttime day-period">
                 <h3 class="night">Evening | {{weather}}</h3>
-                <p class="sub"><strong>{{nightAvail}}</strong></p>
+                <p class="sub"><strong>Event: {{nightAvail}}</strong></p>
 
                 {{#if nightNotes}}
-                <div class="day-notes">
+                <div class="notes">
                     <h4>Notes</h4>
                     <p>{{{nightNotes}}}</p>
                 </div>
@@ -61,12 +61,12 @@
 
 
                 {{#if nightLinks}}
-                <div class="night-slinks">
+                <div class="slinks">
                     <h4>Social Links Available</h4>
                     <ul>
                         {{#each nightLinks}}
                         <li>
-                            {{this}}
+                            <a href="/slink/{{this}}"><img src="/img/characters/{{this}}.png"></a> 
                         </li>
                         {{/each}}
                     </ul>
@@ -79,7 +79,7 @@
 
             <div>
                 {{#if spoilers}}
-                <div class="day-spoilers">
+                <div class="spoilers">
                     <h3 class="sub">Spoilers</h3>
                     <ul>
                         {{#spoilers}}

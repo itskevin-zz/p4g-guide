@@ -10,7 +10,6 @@ body {
     min-height: 100vh;
 }
 a{
-    color: #888;
     text-decoration: none;
 }
 .main-content {
@@ -59,6 +58,32 @@ header a {
 .evening.day-period {
     border-top: 1px solid #888;
 }
+.slinks-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width:1024px;
+}
+.slink-card {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 0 4px;
+}
+.slink-card img {
+    height: 130px;
+    width: auto;
+    background-color: #fff2b0;
+}
+.slinks ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 8px;
+}
+.slinks img {
+    height: 15vh;
+    background-color: #fff2b0;
+}
 .container {
     display: flex;
     align-items: center;
@@ -67,11 +92,6 @@ header a {
 .confidant-nav ul li {
     display: inline;
 }
-.confidant-nav a,
-.confidants-list a {
-    color: rgb(14, 14, 65);
-}
-
 .collapsible {
     background-color: #777;
     color: white;

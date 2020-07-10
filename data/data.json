@@ -6627,7 +6627,12 @@
     "name": "Investigation Group",
     "notes": "The Fool Social Link progresses automatically as you complete the story",
     "rank": [
-    "Automatic upon clearing Yukiko's Castle",
+    {
+        "rank": "Rank 1",
+        "points": 0,
+        "notes": "Automatic upon clearing Yukiko's Castle",
+        "dialog": []
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -6690,7 +6695,12 @@
     "name": "Yosuke Hanamura",
     "notes": "",
     "rank": [
-    "Automatic on April 16th",
+    {
+        "rank": "Rank 1",
+        "points": 0,
+        "notes": "Automatic on April 16th",
+        "dialog": []
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -7112,7 +7122,10 @@
     "name": "Yukiko Amagi",
     "notes": "",
     "rank": [
-    "Automatic on May 17th",
+    {
+        "rank": "Rank 1",
+        "notes":"Automatic on May 17th"
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -7641,7 +7654,10 @@
     "name": "Margaret",
     "notes": "",
     "rank": [
-    "Starting from May 19, enter the Velvet Room to access the Empress's Social Link. (Level 3 Knowledge is required)",
+        {
+            "rank": "Rank 1",
+            "notes":    "Starting from May 19, enter the Velvet Room to access the Empress's Social Link. (Level 3 Knowledge is required)"
+        },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -7704,7 +7720,10 @@
     "name": "Kanji Tatsumi",
     "notes": "",
     "rank": [
-    "Starting from June 9th, go to the school, on Learning Building 2F, there's a female student located near the middle Staircase. She'll mention about Kanji Threatening people. After you have spoken to her. Go find Kanji at Practice Building 1F. Speak to him and pick the first choice 'Yes I do.' to activate the Social Link.",
+    {
+        "rank":"Rank 1",
+        "notes":"Starting from June 9th, go to the school, on Learning Building 2F, there's a female student located near the middle Staircase. She'll mention about Kanji Threatening people. After you have spoken to her. Go find Kanji at Practice Building 1F. Speak to him and pick the first choice 'Yes I do.' to activate the Social Link."
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -8096,7 +8115,10 @@
     "name": "Ryotaro Dojima",
     "notes": "Dojima's social link advances at night, and his availability is determined by the current dungeon. If it's finished, Dojima gets his ",
     "rank": [
-    "Talk to Dojima starting from May 6th.",
+    {
+        "rank":"Rank 1",
+        "notes":"Talk to Dojima starting from May 6th."
+    },
     {
     "rank": "Rank 2 (Requires LV 2 Expression)",
     "points": 0,
@@ -8523,7 +8545,10 @@
     "name": "Rise Kujikawa",
     "notes": "",
     "rank": [
-    "Automatic on July 23rd",
+    {
+        "rank":"Rank 1",
+        "notes":"Automatic on July 23rd"
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -8919,7 +8944,10 @@
     "name": "Chie Satonaka",
     "notes": "",
     "rank": [
-    "Automatic on April 18th",
+    {
+        "rank":"Rank 1",
+        "notes":"Automatic on April 18th"
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -9358,7 +9386,10 @@
     "name": "Nanako Dojima",
     "notes": "Nanako's schedule is determined on whether you finish the dungeon or not. Whenever you have Dojima around, you cannot access Nanako's Social link",
     "rank": [
-    "Automatic on May 3rd.",
+    {
+        "rank":"Rank 1",
+        "notes":"Automatic on May 3rd."
+    },
     {
     "rank": "Rank 2",
     "points": 3,
@@ -9890,7 +9921,10 @@
     "name": "Fox",
     "notes": "The Hermit Social Link progresses through the completion of ema requests. Accepting quests takes no time, but turning them in does. The Fox is available any day you can reach the shrine.",
     "rank": [
-    " Cleared Quest 7, Automatic on May 5th",
+    {
+        "rank":"Rank 1",
+        "notes":" Cleared Quest 7. Automatic on May 5th"
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -9953,7 +9987,10 @@
     "name": "Naoto Shirogane",
     "notes": "",
     "rank": [
-    "Starting from October 21, First talk to Naoto, then go to Shopping District , North and find the man in a black (Near Aiya). Talk to him and pick the first choice. (You must have Maxed Knowledge). Go back to the school and find Naoto, you must have maxed courage to start the Social Link.",
+    {
+        "rank":"Rank 1",
+        "notes":"Starting from October 21, First talk to Naoto, then go to Shopping District , North and find the man in a black (Near Aiya). Talk to him and pick the first choice. (You must have Maxed Knowledge). Go back to the school and find Naoto, you must have maxed courage to start the Social Link."
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -10527,7 +10564,10 @@
     "name": "Sports Club",
     "notes": "",
     "rank": [
-    "Starting from April 19, visit the head office and speak to King Moron. This will give you the option to join the Basketball Club (Kou) or the Soccer Club (Daisuke).",
+    {
+        "rank":"Rank 1",
+        "notes":"Starting from April 19, visit the head office and speak to King Moron. This will give you the option to join the Basketball Club (Kou) or the Soccer Club (Daisuke)."
+    },
     {
     "rank": "Rank 2 (Basketball)",
     "points": 0,
@@ -11310,7 +11350,10 @@
     "name": "Naoki Konishi",
     "notes": "",
     "rank": [
-    "Starting from June 8th , you'll see a cutscene with Naoki for the first time. After this event , you can find him at the first floor in the learning Building. Speak with Naoki 3 times to activate his Social Link.",
+    {
+        "rank":"Rank 1",
+        "notes":"Starting from June 8th , you'll see a cutscene with Naoki for the first time. After this event , you can find him at the first floor in the learning Building. Speak with Naoki 3 times to activate his Social Link."
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -11711,7 +11754,10 @@
     "arcana": "Death",
     "name": "Hisano Kuroda",
     "rank": [
-    "When you reach Devil's Social Link up to rank 4, you'll see an event with Hisano. After this, you can find her at the Flood Plain on Sundays (Or Holidays) talk to her to start the Social Link.",
+    {
+        "rank":"Rank 1",
+        "notes":"When you reach Devil's Social Link up to rank 4, you'll see an event with Hisano. After this, you can find her at the Flood Plain on Sundays (Or Holidays) talk to her to start the Social Link."
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -12157,7 +12203,10 @@
     "arcana": "Temperance",
     "name": "Eri Minami",
     "rank": [
-    "Starting from May 2nd, go to Shopping District North and look for the bulletin board. Apply for the Assistant daycare caretaker Job. When the Job is available, go to Shopping District South and examine the Bus Stop to reach to the Daycare Job. You must take the job twice before the Social Link starts.",
+    {
+        "rank":"Rank 1",
+        "notes":"Starting from May 2nd, go to Shopping District North and look for the bulletin board. Apply for the Assistant daycare caretaker Job. When the Job is available, go to Shopping District South and examine the Bus Stop to reach to the Daycare Job. You must take the job twice before the Social Link starts."
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -12669,7 +12718,10 @@
     "name": "Sayoko Uehara",
     "notes": "",
     "rank": [
-    "Starting from May 25, Apply for the Hospital Janitor Job. Go to the Cleaning part time job twice. (Requires Lv3 Diligence)",
+    {
+        "rank":"Rank 1",
+        "notes":"Starting from May 25, Apply for the Hospital Janitor Job. Go to the Cleaning part time job twice. (Requires Lv3 Diligence)"
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -13105,7 +13157,10 @@
     "name": "Shu Nakajima",
     "notes": "",
     "rank": [
-    "Starting from May 25, Apply for the Tutor Job. (Requires Lv5 Understanding)",
+    {
+        "rank":"Rank 1",
+        "notes":"Starting from May 25, Apply for the Tutor Job. (Requires Lv5 Understanding)"
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -13602,7 +13657,10 @@
     "name": "Teddie",
     "notes": "The Star Social Link levels up automatically as you progress through the story",
     "rank": [
-    "Automatic on June 24th",
+    {
+        "rank":"Rank 1",
+        "notes":"Automatic on June 24th"
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -13665,7 +13723,10 @@
     "name": "Ai Ebihara",
     "notes": "You`ll have to be careful with Ai, because picking the wrong choices can instantly bring her to Reverse.",
     "rank": [
-    "Attend the Strength Social Link, until it reaches Rank 4. You'll see a cutscene involving Ai. From now on you can find Ai at the School Lobby, talk to her, she'll ask you if wanted to skip class with her. (You need a LV 3 Courage in order to skip classes). Accept her request on the next day, she'll ask you to skip classes on lunch break.",
+    {
+        "rank":"Rank 1",
+        "notes":"Attend the Strength Social Link, until it reaches Rank 4. You'll see a cutscene involving Ai. From now on you can find Ai at the School Lobby, talk to her, she'll ask you if wanted to skip class with her. (You need a LV 3 Courage in order to skip classes). Accept her request on the next day, she'll ask you to skip classes on lunch break."
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -14340,7 +14401,10 @@
     "name": "Cultural Club",
     "notes": "The Sun Social Link, is one of the few Social Links that is available on raining days, so take advantage of that time period to rank it up.",
     "rank": [
-    "Starting from April 25, You can join either the Drama club or the Music Club. If you join the Drama Club, Yumi Ozawa will be your official Sun Arcana Social Link and if you join the Music Club then its Ayane Matsugana.",
+    {
+        "rank":"Rank 1",
+        "notes":"Starting from April 25, You can join either the Drama club or the Music Club. If you join the Drama Club, Yumi Ozawa will be your official Sun Arcana Social Link and if you join the Music Club then its Ayane Matsugana."
+    },
     {
     "rank": "Rank 2 (Drama)",
     "points": 0,
@@ -15135,7 +15199,10 @@
     "name": "Seekers of Truth",
     "notes": "The Judgement Social Link progresses automatically as you complete the Normal Ending Path",
     "rank": [
-    "Automatic on December 3rd",
+    {
+        "rank":"Rank 1",
+        "notes":"Automatic on December 3rd"
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -15198,7 +15265,10 @@
     "name": "Marie",
     "notes": "",
     "rank": [
-    "Starting on April 18th, vist the Velvet Room. If event does not trigger, re-enter the Velvet Room.",
+    {
+        "rank":"Rank 1",
+        "notes":"Starting on April 18th, vist the Velvet Room. If event does not trigger, re-enter the Velvet Room."
+    },
     {
     "rank": "Rank 2",
     "points": 0,
@@ -15693,7 +15763,10 @@
     "name": "Tohru Adachi",
     "notes": "Depending on the rank, Adachi can only be advanced during certain times of the day.",
     "rank": [
-    "Starting on May 13th, visit Junes and speak to Adachi, then pick the choice\"Hang out with Adachi.\"",
+    {
+        "rank":"Rank 1",
+        "notes":"Starting on May 13th, visit Junes and speak to Adachi, then pick the choice\"Hang out with Adachi.\""
+    },
     {
     "rank": "Rank 2 (Day Time)",
     "points": 0,
