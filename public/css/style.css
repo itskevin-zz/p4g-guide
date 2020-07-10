@@ -15,6 +15,9 @@ a{
 .main-content {
     flex-grow: 1; 
 }
+img.banner {
+    max-width: 60vw;
+}
 footer {
     color: #888;
     border-top: 1px solid #eee;
@@ -46,17 +49,24 @@ header a {
     text-align:center;
     font-weight: 600;
 }
+.sub {
+    text-align: center;
+}
 .day-nav {
     margin:8px;
 }
 .day-period {
     margin: 32px 0;
 }
-.day-period h3 {
+.day-period h3,
+.spoilers h3 {
     text-align:center;
 }
 .evening.day-period {
     border-top: 1px solid #888;
+}
+.day-divider {
+    max-width: 60vh;
 }
 .slinks-container {
     display: flex;
@@ -75,13 +85,17 @@ header a {
     width: auto;
     background-color: #fff2b0;
 }
+.slinks ul {
+    padding: 0;
+}
 .slinks ul li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 4px;
 }
 .slinks img {
-    height: 15vh;
+    height: 130px;
+    width: auto;
     background-color: #fff2b0;
 }
 .container {
@@ -123,6 +137,10 @@ header a {
     transition: max-height 0.2s ease-out;
   }
 
+.spoilers ul{
+    list-style-type: none;
+    padding: 0;
+}
   .answer {
     background-color: #ddd;
     display: inline-block; 

@@ -24,8 +24,7 @@
 
             <div class="daytime day-period">
                 <h3 class="day">Daytime | {{weather}}</h3>
-                <p class="sub"><strong>Event: {{dayAvail}}</strong></p>
-
+                <p class="sub">{{dayAvail}}</p>
                 {{#if dayNotes}}
                 <div class="notes">
                     <h4>Notes</h4>
@@ -48,10 +47,11 @@
             
             </div>
 
+            <hr class="day-divider">
+
             <div class="nighttime day-period">
                 <h3 class="night">Evening | {{weather}}</h3>
-                <p class="sub"><strong>Event: {{nightAvail}}</strong></p>
-
+                <p class="sub">{{nightAvail}}</p>
                 {{#if nightNotes}}
                 <div class="notes">
                     <h4>Notes</h4>
@@ -75,7 +75,7 @@
             
             </div>
             
-            <hr>
+            <hr class="day-divider">
 
             <div>
                 {{#if spoilers}}
