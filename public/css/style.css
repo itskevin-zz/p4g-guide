@@ -83,7 +83,6 @@ header a {
 .slink-card img {
     height: 130px;
     width: auto;
-    background-color: #fff2b0;
 }
 .slinks ul {
     padding: 0;
@@ -96,7 +95,6 @@ header a {
 .slinks img {
     height: 130px;
     width: auto;
-    background-color: #fff2b0;
 }
 .container {
     display: flex;
