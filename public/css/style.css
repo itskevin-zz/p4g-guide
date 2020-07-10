@@ -175,13 +175,12 @@ header a {
         display: none;
     }
     .next-day a::before {
-        content: "\25b6";
+        content: "\25ba";
         /* content: "next"; */
         font-size:48px;
     }
     .prev-day a::after {
-        content: "\25c0";
+        content: "\25c4";
         /* content: "prev"; */
         font-size: 48px;
-    }
   }
