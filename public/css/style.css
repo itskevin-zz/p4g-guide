@@ -4,12 +4,12 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 16px;
-    background-color: #fff;
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-a {
+a{
     color: #888;
     text-decoration: none;
 }
@@ -40,9 +40,11 @@ header a {
     display: flex;
 }
 .date-nav .date {
+    display: flex;
     flex-grow: 3;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    text-align:center;
     font-weight: 600;
 }
 .day-nav {
@@ -51,8 +53,7 @@ header a {
 .day-period {
     margin: 32px 0;
 }
-.day-period h3,
-.sub {
+.day-period h3 {
     text-align:center;
 }
 .evening.day-period {
@@ -70,7 +71,7 @@ header a {
 .confidants-list a {
     color: rgb(14, 14, 65);
 }
-/*** Collasping divs ***/
+
 .collapsible {
     background-color: #777;
     color: white;
@@ -104,22 +105,45 @@ header a {
 
   .answer {
     background-color: #ddd;
-    display: inline-block; /* you could do this as a full-width block instead */
+    display: inline-block; 
     padding: 8px 12px;
-    position: relative; /* needed for placeholder positioning */
+    position: relative; 
   }
   
   .answer:not(:active) {
-    background-color: #eee; /* these two colors must be equivalent A */
-    color: #eee; /* these two colors must be equivalent B */
-    min-width: 96px; /* 72px if box-sizing is border-box; ensures the placeholder is fully visible if the text is smaller than the placeholder text */
-    user-select: none; /* if you want it to be copyable, may highlight spoiler text when they click */
+    background-color: #eee; 
+    color: #eee; 
+    min-width: 96px; 
+    user-select: none; 
   }
   
   .answer:not(:active)::before {
     position: absolute;
     top: 8px;
     left: 12px;
-    content: 'Click\a0to\a0reveal'; /* non-breaking spaces probably necessary */
+    content: 'Click\a0to\a0reveal'; 
     color: #999;
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    header {
+        margin-bottom: 16px;
+    }
+    .day-nav a span {
+        display: none;
+    }
+    .next-day a::before {
+        content: "\25b6";
+        /* content: "next"; */
+        font-size:48px;
+    }
+    .prev-day a::after {
+        content: "\25c0";
+        /* content: "prev"; */
+        font-size: 48px;
+    }
   }
