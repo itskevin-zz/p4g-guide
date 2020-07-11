@@ -53,11 +53,7 @@ var febCalendar = jsCalendar.new(feb, "01/02/2012", {
     navigator : false,
     dayFormat : "DDD"
 });           
-var mar = document.getElementById("mar");
-var marCalendar = jsCalendar.new(mar, "01/03/2012", {
-    navigator : false,
-    dayFormat : "DDD"
-});     
+   
 
 aprCalendar.onDateClick(function(event, date){
     var link = date.toJSON().substr(5,5).replace("-","");
@@ -102,8 +98,4 @@ janCalendar.onDateClick(function(event, date){
 febCalendar.onDateClick(function(event, date){
     var link = date.toJSON().substr(5,5).replace("-","");
     window.location.href = "/day/"+link
-})      
-marCalendar.onDateClick(function(event, date){
-    var link = date.toJSON().substr(5,5).replace("-","");
-    window.location.href = "/day/"+link
-})      
+})
