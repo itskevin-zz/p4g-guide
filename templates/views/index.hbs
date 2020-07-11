@@ -4,6 +4,9 @@
         <title>Persona 4 Golden Guide</title>
         <link rel="icon" href="/img/icon.png">
         <link rel="stylesheet" href="/css/style.css">
+               <!-- jsCalendar v1.4.3 Javascript and CSS from jsdelivr npm cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.3/source/jsCalendar.min.js" integrity="sha384-JqNLUzAxpw7zEu6rKS/TNPZ5ayCWPUY601zaig7cUEVfL+pBoLcDiIEkWHjl07Ot" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.3/source/jsCalendar.min.css" integrity="sha384-+OB2CadpqXIt7AheMhNaVI99xKH8j8b+bHC8P5m2tkpFopGBklD3IRvYjPekeWIJ" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     </head>
     <body>
@@ -14,22 +17,45 @@
                 <p>
             </div>
             <div>
-                <p>
-                    <a href="/day/apr18">
-                        <strong>Get Started Here</strong>
-                    </a>
-                </p>
+                
                  <div class="container">
                     <img src="/img/banner.jpg" class="banner" alt="image of investigation team">
                 </div>
+                
+                <div class="container">
+                    <h3>Jump to a date</h3>
+                    <div id="gameCalendar"></div>
+                </div>
+                
+
                 <h3>To Do</h3>
                 <ul>
-                    <li>Create a Calendar page for navigation</li>
+                    <li>Disable dates on Calendar Page</li>
                     <li>Test on mobile</li>
                 </ul>
                     
             </div>
             {{>footer}}
         </div>
+
+        <script type="text/javascript">
+            // Create the calendar
+            var gameCalendar = jsCalendar.new({
+                target: "#gameCalendar",
+                navigator: true,
+                dayFormat: "DDD",
+                monthFormat: "month YYYY",
+                date: "11/04/2011"
+                });
+            // Limit to only current month
+            gameCalendar.min("01/04/2011");
+            gameCalendar.max("20/03/2012");
+
+            gameCalendar.onDateClick(function(event, date){
+                var link = date.toJSON().substr(5,5).replace("-","");
+                window.location.href = "/day/"+link
+            }) 
+        </script>
+
     </body>
 </html>
