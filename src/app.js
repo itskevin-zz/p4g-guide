@@ -6,6 +6,7 @@ const dataRoute = require('./routes/data')
 const indexRoute = require('./routes/index')
 const dayRoute = require('./routes/day')
 const slinkRoute = require('./routes/slink')
+const calendarRoute = require('./routes/calendar')
 
 // create express instance
 const app = express()
@@ -30,6 +31,7 @@ app.use(dataRoute)
 app.use(indexRoute)
 app.use(dayRoute)
 app.use(slinkRoute)
+app.use(calendarRoute)
 
 // 404 pages
 app.get('*', (req, res) => {
