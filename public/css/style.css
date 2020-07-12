@@ -182,7 +182,7 @@ header a {
   }
 
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     h1 {
         font-size: 24px;
         margin-bottom: 8px;
